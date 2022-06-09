@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook</title>
+    <style>
+        .header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            height: 12%;
+            background-color: white;
+            border-bottom: 2px solid blue;
+            z-index: 1;
+        }
+        #fb {
+            width: 15%;
+            float: left;
+        }
+        #search {
+            position: absolute;
+            top: 30px;
+            width: 15%;
+            height: 30px;
+            font-size: 13px;
+            text-align: right;
+            border-radius: 5%;
+            border-color: grey;
+            float: left;
+        }
+        #navBar {
+            position: absolute;
+            top: 10px;
+            left: 33%;
+            float: left;
+            width: 65%;
+        }
+
+        .header>div>ul>li>a {
+            width: 15%;
+            height: 50px;
+            text-align: center;
+            text-decoration: none;
+            color: blue;
+            font-size: 21px;
+            padding-top: 10px;
+            display: inline;
+            float: left;
+        } 
+        #mess {
+            position: absolute;
+            top: 10px;
+            right: 2%;
+            width: 4%;
+            float: right;
+        }
+    
+        .header li, #sideBar li {
+            list-style: none;
+        }
+        .header li a:hover {
+            background-color: blue;
+            color: aliceblue;
+        }
+
+        .body {
+            width: 100%;
+            top: 100px;
+        }
+        #sideBar {
+            position: fixed;
+            top: 12%;
+            width: 20%;
+            float: left;
+            overflow: auto;
+        }
+        #main {
+            position: relative;
+            top: 120px;
+            left: 25%;
+        }
+        #sideBar li a {
+            height: 50px;
+            text-decoration: none;
+            text-align: left;
+            line-height: 30px;
+            color: white;
+            background-color: blue;
+            font-size: 21px;
+            margin: 10px 10px;
+            display: block;
+            clear: both;
+            text-indent: 15px;
+            padding-top: 10px;
+        }
+        #sideBar li a:hover {
+            background-color: lightblue;
+            color: black;
+            font-weight: bolder;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="fb.png" alt="" id="fb">
+        <input type="search" id="search">
+        <div id="navBar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Watch</a></li>
+                <li><a href="#">Marketplace</a></li>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Notifications</a></li>
+                <li><a href="#">Menu</a></li>
+            </ul>
+        </div>
+        <img src="mess.png" alt="" id="mess">
+    </div>
+
+    <div class="body">
+        <div id="sideBar">
+            <ul style="padding: 0;">
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Friends</a></li>
+                <li><a href="#">Groups</a></li>
+                <li><a href="#">Marketplace</a></li>
+                <li><a href="#">Watch</a></li>
+            </ul>
+            <img src="qc.png" alt="" style="width: 100%;">
+        </div>
+        <div id="main">
+            <h2>New Section</h2>
+            <div>
+                <h2>New Article</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque in porta lorem. Morbi condimentum est nibh, et consectetur tortor feugiat at.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque in porta lorem. Morbi condimentum est nibh, et consectetur tortor feugiat at.</p>
+                <p>1</p>
+                <p>2</p>
+                <p>1</p>
+                <p>2</p>
+                <p>1</p>
+                <p>2</p>
+                <p>1</p>
+                <p>2</p>
+                <p>1</p>
+                <p>2</p>
+            </div>
+            <div>
+                <h2>News Article</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque in porta lorem. Morbi condimentum est nibh, et consectetur tortor feugiat at.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque in porta lorem. Morbi condimentum est nibh, et consectetur tortor feugiat at.</p>
+                <p>1</p>
+                <p>2</p>
+                <p>1</p>
+                <p>2</p>
+                <p>1</p>
+                <p>2</p>
+                <p>1</p>
+                <p>2</p>
+                <p>1</p>
+                <p>2</p>
+            </div>
+        </div>
+    </div>
+
+    
+   
+    
+
+</body>
+</html>

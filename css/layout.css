@@ -1,0 +1,100 @@
+#main>p {
+    border: 1px solid red;
+    text-align: center;
+    vertical-align: auto;
+    height: 50px;
+}
+
+#header {
+    background-image: linear-gradient(lightblue,white);
+    color: red;
+    text-align: center;
+    font: 2em sans-serif;
+    height: 150px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    margin-bottom: 10px;
+}
+#footer {
+    background-image: linear-gradient(white,green);
+    color: white;
+    text-align: center;
+    font: 2em sans-serif;
+    height: 150px;
+    width: 100%;
+    clear: both;
+    z-index: 1;
+}
+
+#body {
+    background-color: bisque;
+    width: 100%;
+    margin-top: 160px;
+}
+
+#leftMenu {
+    background-color: blue;
+    color: wheat;
+    text-align: center;
+    font: 2em sans-serif;
+    float: left;
+    z-index: 2;
+
+    position: fixed;
+}
+#main {
+    float: left;
+    position: relative;
+}
+#rightMenu {
+    background-color: gold;
+    color: red;
+    text-align: center;
+    font: 2em sans-serif;
+    float: left;
+    z-index: 1;
+
+    position: fixed;
+}
+
+@media screen and (min-width: 768px) {
+    #leftMenu {
+        width: 20%;
+        margin-right: 2%;
+    }
+    #main {
+        width: 65%;
+        left: 21%;
+    }
+    #rightMenu {
+        width: 13.5%;
+        right: 0%;
+        margin-left: 2%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #body {
+        width: 100%;
+        position: relative;
+        float: none;
+        margin-top: 50px;
+        bottom: 200px;
+    }
+    #leftMenu {
+        top: 0px;
+        width: 10%;
+    }
+    #main {
+        left: 0;
+        top: 200px;
+        width: 100%;
+    }
+    #rightMenu {
+        left: 0;
+        top: 150px;
+        width: 100%;
+    }
+}

@@ -1,0 +1,12 @@
+table thead {
+    background-color: #df8c8c;
+    color: white;
+}
+
+.success {
+    color: greenyellow;
+}
+
+.error {
+    color: red;
+}
